@@ -1,4 +1,4 @@
-fuel_plugin_example_v5
+fuel_plugin_stub
 ======================
 
-Plugin description
+Fuel plugin stub for Fuel10
