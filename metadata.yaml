@@ -1,6 +1,6 @@
 name: fuel_plugin_stub
 title: Stub plugin for Fuel10
-version: '1.0.0'
+version: '0.1'
 description: Stub plugin for Fuel10
 fuel_version: ['10.0']
 licenses: ['Apache License Version 2.0']
