@@ -1,0 +1,19 @@
+name: fuel_plugin_stub
+title: Stub plugin for Fuel10
+version: '1.0.0'
+description: Stub plugin for Fuel10
+fuel_version: ['10.0']
+licenses: ['Apache License Version 2.0']
+authors: ['Mirantis']
+homepage: 'https://github.com/rkhozinov/fuel-plugin-stub'
+groups: []
+is_hotpluggable: true
+
+releases:
+  - os: ubuntu
+    version: newton-10.0
+    mode: ['ha']
+    deployment_scripts_path: deployment_scripts/
+    repository_path: repositories/ubuntu/xenial
+
+package_version: '5.0.0'
