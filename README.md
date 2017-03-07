@@ -1,2 +1,4 @@
-# fuel-plugin-stub
-Stub plugin to test update plugin task for Fuel10
+fuel_plugin_example_v5
+======================
+
+Plugin description
