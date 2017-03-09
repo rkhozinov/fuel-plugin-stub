@@ -12,11 +12,17 @@ elif grep -i Ubuntu /etc/issue.net >/dev/null; then
 fi
 
 function install_package {
-    if [ $OS_NAME == 'ubuntu' ]; then
+    case "$OS_NAME" in
+      'ubuntu' )
         apt-get install -y --force-yes -o 'APT::Get::AllowUnauthenticated=1' fuel-simple-service
-    elif [ $OS_NAME == 'centos' ]; then
+        ;;
+      'centos' )
         yum install -y fuel-simple-service
-    fi
+        ;;
+      *)
+        ;;
+
+    esac
 }
 
 install_package
