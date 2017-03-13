@@ -6,7 +6,7 @@ class fuel_plugin_example_v5 {
   file { '/tmp/fuel_plugin_example_v5_puppet':
       owner   => 'root',
       group   => 'root',
-      mode    => 0644,
+      mode    => '0644',
       content => "fuel_plugin_example_v5\n",
   }
 }
