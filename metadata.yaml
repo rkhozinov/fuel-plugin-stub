@@ -16,4 +16,4 @@ releases:
     deployment_scripts_path: deployment_scripts/
     repository_path: repositories/ubuntu/xenial
 
-package_version: '5.0.0'
+package_version: '4.0.0'
