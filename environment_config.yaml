@@ -7,9 +7,9 @@
 attributes:
   metadata:
     group: 'other'
-  fuel_plugin_stub_text:
+  fuel_plugin_example_v5_text:
     value: 'Set default value'
     label: 'Text field'
     description: 'Description for text field'
     weight: 25
-    type: 'text'
+    type: "text"

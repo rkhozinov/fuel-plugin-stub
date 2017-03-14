@@ -1,6 +1,6 @@
-- id: fuel_plugin_stub
+- id: fuel_plugin_example_v5
   type: group
-  role: [fuel_plugin_stub]
+  role: [fuel_plugin_example_v5]
   tasks:
     - hiera
     - globals
@@ -10,7 +10,7 @@
     strategy:
       type: parallel
 
-- id: fuel_plugin_stub-controller-deployment
+- id: fuel_plugin_example_v5-controller-deployment
   type: puppet
   version: 2.0.0
   groups: [primary-controller, controller]
@@ -21,10 +21,10 @@
     puppet_modules: "."
     timeout: 3600
 
-- id: fuel_plugin_stub-deployment
+- id: fuel_plugin_example_v5-deployment
   type: puppet
   version: 2.0.0
-  groups: [fuel_plugin_stub]
+  groups: [fuel_plugin_example_v5]
   required_for: [deploy_end]
   requires: [deploy_start]
   parameters:
@@ -33,10 +33,10 @@
     timeout: 3600
     retries: 10
 
-- id: fuel_plugin_stub-post-deployment-sh
+- id: fuel_plugin_example_v5-post-deployment-sh
   type: shell
   version: 2.0.0
-  role: [fuel_plugin_stub]
+  role: [fuel_plugin_example_v5]
   required_for: [post_deployment_end]
   requires: [post_deployment_start]
   parameters:
