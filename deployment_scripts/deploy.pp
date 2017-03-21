@@ -7,7 +7,7 @@ class fuel_plugin_stub {
       owner   => 'root',
       group   => 'root',
       mode    => '0644',
-      content => "fuel_plugin_stub\n",
+      content => 'fuel_plugin_stub\n',
   }
 }
 
