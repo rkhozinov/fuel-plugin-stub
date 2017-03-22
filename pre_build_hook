@@ -18,4 +18,5 @@ rm -f $UBUNTU_REPO_PATH/*.deb
 rm -f $CENTOS_REPO_PATH/*.rpm
 
 fpm -t deb -p $UBUNTU_REPO_PATH -n fuel-simple-service -v 5.0.0 -s dir $ROOT/fuel-simple-service.py=/usr/bin/fuel-simple-service.py
+dpkg-scanpackages $UBUNTU_REPO_PATH/ | gzip -c - > $UBUNTU_REPO_PATH/Packages.gz
 fpm -t rpm -p $CENTOS_REPO_PATH -n fuel-simple-service -v 5.0.0 -s dir $ROOT/fuel-simple-service.py=/usr/bin/fuel-simple-service.py
